@@ -20,7 +20,7 @@ public class StudentRestController {
 
     @GetMapping("/")
     public String detteErRoden() {
-        return "Dette er mainpage for projektet";
+        return "Dette her er mainpage for projektet";
     }
 
     @GetMapping("/students")
