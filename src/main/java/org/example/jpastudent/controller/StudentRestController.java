@@ -17,6 +17,12 @@ public class StudentRestController {
     @Autowired
     StudentRepository studentRepository;
 
+
+    @GetMapping("/")
+    public String detteErRoden() {
+        return "Dette er mainpage for projektet";
+    }
+
     @GetMapping("/students")
     public List<Student> getStudents() {
         return studentRepository.findAll();
